@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Shadows+Into+Light&display=swap");
+.split {
+  height: 80vh; /* Full height of the viewport */
+  display: flex;
+}
+
+.split > div {
+  overflow: auto; /* Adds scroll to each panel if content overflows */
+}
+
+.split-gutter {
+  background-color: #333; /* Gutter background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: e-resize;
+  /* You can add more styles if needed */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar  */
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/public/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.banner .banner-right {
+  display: flex;
+  padding: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  background: transparent;
+}
+
+.banner .banner-right .signInFormCantainer {
+  background-color: white;
+  height: 400px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.3);
+
+  padding: 10px;
+}
+.banner .banner-right .signInFormCantainer h3 {
+  text-align: center;
+}
+.banner .banner-right .signInFormCantainer .signInForm {
+  margin: 25px;
+}
+.banner .banner-right .signInFormCantainer label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner .banner-right .signInFormCantainer input {
+  width: 100%;
+  padding: 2px;
+}
+
+.banner .banner-right .signInFormCantainer input#password {
+  margin-bottom: 20px;
+}
+
+.banner .banner-right .signInFormCantainer p {
+  font-size: 11px;
+}
+
+.banner .banner-right .signInFormCantainer .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-right .signInFormCantainer .newAccountContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.banner .banner-right .signInFormCantainer .newAccountContainer a {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.banner2 {
+  padding: 50px;
+}
+
+.banner2 h1 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Shadows Into Light", cursive; */
+}
+
+.banner3 img {
+  width: inherit;
+  height: inherit;
+}
+
+/* signUp  */
+
+.banner .banner-right .signUpFormCantainer {
+  background-color: white;
+  height: 550px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.3);
+
+  padding: 10px;
+}
+.banner .banner-right .signUpFormCantainer h3 {
+  text-align: center;
+}
+.banner .banner-right .signUpFormCantainer .signInForm {
+  margin: 25px;
+}
+.banner .banner-right .signUpFormCantainer label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner .banner-right .signUpFormCantainer input {
+  width: 100%;
+  padding: 2px;
+}
+
+.banner .banner-right .signUpFormCantainer input#password {
+  margin-bottom: 20px;
+}
+
+.banner .banner-right .signUpFormCantainer p {
+  font-size: 11px;
+}
+
+.banner .banner-right .signUpFormCantainer .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-right .signUpFormCantainer .newAccountContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.banner .banner-right .signUpFormCantainer .newAccountContainer a {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.signInForm input {
+  border: 2px solid grey;
+}
+
+#cancel div {
+  color: white;
+  /* background-color: black; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#cancel i:hover {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+#Form label {
+  color: white;
+}
+
+#Form #cancel {
+  display: block;
+}
+
+.newAccountContainer {
+  display: inline-block;
+  background-color: #007bff; /* Change this to your desired button background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: 1px solid #007bff; /* Add a border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from the anchor tag */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.newAccountContainer:hover {
+  background-color: #0056b3; /* Change to a slightly different color on hover */
+}
+
+/* Define a CSS class for a success button */
+.btn-container .btn1 {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #28a745; /* Green color for success */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.btn1:hover {
+  background-color: #218838; /* Slightly different green color on hover */
+}
+
+.editor {
+  padding: 20px;
+  width: 100%;
+  height: 80vh;
+}
+
+/* Custom CSS Styles for LeetCode-like Textareas */
+.custom-input-box {
+  margin: 20px;
+  border: 1px solid #262626;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #0070f3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-output-box {
+  margin: 20px;
+
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #0070f3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.custom-textarea {
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Hover Effect */
+.custom-textarea:hover {
+  border-color: #0070f3; /* Change border color on hover */
+}
+
+/* Focus Effect */
+.custom-textarea:focus {
+  border-color: #0070f3; /* Change border color when focused */
+  outline: none;
+}
+
+.inpout {
+  padding: 20px;
+}
